@@ -15,7 +15,7 @@ Movie Night is a web application that allows users to search for movies, view mo
 
 ## Deployed Website
 
-https://movie-night-gm.vercel.app/
+[https://movie-night-gm.vercel.app/](https://movie-night-six-silk.vercel.app/)
 
 ## How to Access and Use the Website
 
