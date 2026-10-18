@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night - Discover Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Movie Night</div>
+        <nav>
+            <button id="nav-discover" class="active">Discover</button>
+            <button id="nav-watchlist">Watchlist</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Discover Section -->
+        <section id="discover-section" class="view-section active">
+            <div class="controls-container">
+                <form id="search-form" class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for a movie..." required>
+                    <button type="submit">Search</button>
+                </form>
+
+                <div class="filters">
+                    <select id="genre-select">
+                        <option value="">All Genres</option>
+                        <option value="28">Action</option>
+                        <option value="12">Adventure</option>
+                        <option value="16">Animation</option>
+                        <option value="35">Comedy</option>
+                        <option value="80">Crime</option>
+                        <option value="18">Drama</option>
+                        <option value="27">Horror</option>
+                        <option value="10749">Romance</option>
+                        <option value="878">Science Fiction</option>
+                        <option value="53">Thriller</option>
+                    </select>
+                    <button id="surprise-btn">Surprise Me!</button>
+                </div>
+            </div>
+
+            <!-- UI States -->
+            <div id="status-message" class="status-message hidden"></div>
+
+            <div id="movies-grid" class="movies-grid">
+                <!-- Movie cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Watchlist Section -->
+        <section id="watchlist-section" class="view-section">
+            <h2>Your Watchlist</h2>
+            <div id="watchlist-grid" class="movies-grid">
+                <!-- Watchlist movie cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Movie Details Modal -->
+    <div id="movie-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Movie details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
